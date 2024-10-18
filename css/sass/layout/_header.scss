@@ -1,0 +1,79 @@
+.header{
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid $graycolor;
+    .container{
+        // display: flex;
+        // align-items: center;
+        .logo{
+            position: relative;
+            @media #{$minsmall}{
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            @media #{$minmeduiam}{
+                width: 30%;
+                float: $float-left;
+                text-align: $text-left;
+            }
+            h1{
+                margin-bottom: 0;
+                
+            }
+        }
+        .navbar{
+            @media #{$maxmobile}{
+                display: none;
+                border-radius: 0;
+            }
+            overflow: hidden;
+            background-color: $redcolor;
+            border-radius: 15px;
+            @media #{$minsmall}{
+                width: 100%;
+                float: none;
+                margin-top: 30px;
+                display: block !important;
+            }
+            @media #{$minmeduiam}{
+                width: 70%;
+                float: $float-left;
+                margin-top: 1em;
+            }
+            @media #{$maxmobile}{
+                background-color: transparent;
+            }
+            // position: relative;
+            li{
+                @media #{$maxmobile}{
+                    float: none;
+                    display: block;
+                    background-color: $redcolor;
+                    margin-bottom: 3px;
+                    border-radius: 6px;
+                    
+                    &:hover{
+                        background-color: rgb(231, 90, 90);
+                    }
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+                }
+                width: 20%;
+                float: $float-left;
+                font-size: 18px;
+                text-align: center;
+                padding: 15px 10px;
+                a{
+                    color: #FFF;
+                    text-decoration: none;
+                    &:hover{
+                        color: #CCC;
+                    }
+                }
+            }
+        }
+    }
+}

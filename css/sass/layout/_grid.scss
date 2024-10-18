@@ -1,0 +1,21 @@
+*{
+    @include prefixer(box-sizing, border-box, moz o)
+}
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media #{$minsmall}{
+        width: 750px;
+    }
+    @media #{$minmeduiam}{
+        width: 970px;
+    }
+    @media#{$minlarg}{
+        width: 1170px;
+    }
+}
+.clearfixe{
+    clear: both;
+}

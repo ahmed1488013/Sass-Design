@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color:red;
+}
+
+.contact {
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+.parent .childe {
+  color: green;
+}
+.parent .childe .grand-childe {
+  color: black;
+}
+/*# sourceMappingURL=main-dist.css.map */

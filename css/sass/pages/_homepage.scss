@@ -1,0 +1,111 @@
+/*start slider*/ 
+.slider{
+    q{
+        font: {
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: Tahoma, Arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+        width: 100%;
+        max-height: 350px;
+        margin-top: 10px;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $graycolor;
+            border-radius: 50%;
+            border: 2px solid $graycolor;
+            cursor: pointer;
+            &:hover,
+            &.active{
+                background-color: #FFF;
+                border: 3px solid #333;
+            }
+        }
+    }
+}
+/*end slider*/ 
+/*start servises*/
+.serviscs{
+    .servise-box{
+        float: $float-left;
+        width: (100% / 3);
+        &:not(:last-of-type){
+            padding-right: 20px ;
+        }
+        h3{
+            color: #666;
+            i{
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+            }
+        }
+        p{
+            color: #777;
+            line-height: 1.6 ;
+        }
+        a{
+            color: $redcolor;
+            text-decoration: none;
+        }
+    }
+} 
+/*end servises*/ 
+
+/*start our players*/
+.our-players{
+    .players-box{
+        float: $float-left;
+        width: (100% / 5);
+            padding-right: 20px ;
+        img{
+            max-width: 100%;
+        }
+        h3{
+            color: #666;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            color: #777;
+            line-height: 1.6 ;
+        }
+        a{
+            color: $redcolor;
+            text-decoration: none;
+        }
+    }
+} 
+/*end our players*/ 
+/*start lorem*/ 
+.lorem{
+    .lorem-box{
+        float: $float-left;
+        width: (94% /3);
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+/*end lorem*/ 
+

@@ -1,0 +1,22 @@
+.header-with-border{
+    position: relative;
+    h2{
+        text-align: center;
+    background-color: $redcolor;
+    color: #FFF;
+    margin: 40px auto;
+    width: 360px;
+    border-radius: 15px;
+    padding: 10px 15px ;
+    &::before{
+        content: '';
+        background-color: $graycolor;
+        width: 100%;
+        height: 1.5px;
+        left: 0;
+        top: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+    }
+}

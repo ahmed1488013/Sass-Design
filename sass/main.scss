@@ -1,0 +1,36 @@
+// @for $i from 1 through 50{
+//     .class-#{$i} {
+//         font-size: 10px +$i;
+//     }
+// }
+// .class{
+//     transform: translateX(10px);
+// }
+
+@use './sass/alyout/_gloubal-ruls.scss';
+
+@use './sass/pages/_contact.scss';
+
+@use './sass/variabls/color' as *;
+
+// $alt-color:green;
+// .header{
+//     background-color: $alt-color;
+// }
+// .sidebar{
+//     color: $main;
+//     background-color: $alt;
+// }
+// .class{
+//     transform: translateX(10px);
+// }
+
+.parent{
+    // color: red;
+    .childe{
+        color: green;
+        .grand-childe{
+            color: black;
+        }
+    }
+}
